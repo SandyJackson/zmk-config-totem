@@ -86,7 +86,7 @@
 
             bindings = <
             &kp Q       &kp W       &kp E        &kp R           &kp T                          &kp Y                         &kp U            &kp I        &kp O       &kp P
-            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LEFT_GUI F  &kp G                          &kp H                         &mt RIGHT_GUI J  &mt RCTRL K  &mt RALT I  &kp SEMICOLON
+            &mt LGUI A  &mt LALT S  &mt LCTRL D  &mt LEFT_GUI F  &kp G                          &kp H                         &mt RIGHT_GUI J  &mt RCTRL K  &mt RALT L  &kp SEMICOLON
 &kp DELETE  &kp Z       &kp X       &kp C        &kp V           &kp B                          &kp N                         &kp M            &kp COMMA    &kp DOT     &kp FSLH       &kp SQT
                                     &kp LSHFT    &lt NAV TAB     &mt LA(LC(LG(LSHFT))) ENTER    &mt LA(LC(LEFT_SHIFT)) SPACE  &lt SYM ESC      &kp BSPC
             >;
