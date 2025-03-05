@@ -118,7 +118,7 @@ MAKE_HRM(hmr, &kp, &kp, KEYS_L THUMBS) // Right-hand HRMs.
             bindings = <
             &kp Q       &kp W       &kp E        &kp R           &kp T           &kp Y       &kp U    &kp I        &kp O       &kp P
             &hml LGUI A  &hml LALT S  &hml LCTRL D  &hml LEFT_GUI F  &kp G         &kp H   &hmr RIGHT_GUI J  &hmr RCTRL K  &hmr RALT L  &kp SEMICOLON
-&kp EXIT   &kp Z       &kp X       &kp C        &kp V           &kp B        &kp N  &kp M            &kp COMMA    &kp DOT     &kp FSLH       &kp SQT
+&kp ESC   &kp Z       &kp X       &kp C        &kp V           &kp B        &kp N  &kp M            &kp COMMA    &kp DOT     &kp FSLH       &kp SQT
                             &kp LSHFT    &lt NAV TAB     &mt LA(LC(LG(LSHFT))) BSPC    &mt LA(LC(LEFT_SHIFT)) SPACE  &lt SYM ENTER      &kp DELETE
             >;
         };
