@@ -89,7 +89,7 @@ ZMK_ADAPTIVE_KEY(
   /delete-property/ ignore-modifiers;
 };
 
-/* #include combos.dtsi */
+#include "combos.dtsi"
 / {
         keymap {
                 compatible = "zmk,keymap";
