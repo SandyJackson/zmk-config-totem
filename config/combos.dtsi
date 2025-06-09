@@ -8,7 +8,7 @@
 						╰────────────┴────────────╯                        ╰──────────────┴─────────────╯
 */
 
-#define COMBO_TERM_FAST 18
+#define COMBO_TERM_FAST 30
 #define COMBO_TERM_SLOW 30
 
 #define COMBO_IDLE_FAST 150
@@ -17,14 +17,14 @@
 /* Combos for brackets etc. symmetrically across */
 ZMK_COMBO(lbrc,  &kp LBRC,     LT1 LT2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rbrc,  &kp RBRC,     RT1 RT2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST)
-ZMK_COMBO(lbkt,  &kp LBKT,     LM1 LM2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST, LG(LCTRL), KEYS_R)
-ZMK_COMBO(rbkt,  &kp RBKT,     RM1 RM2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST, LG(LCTRL), KEYS_L)
+ZMK_COMBO(lbkt,  &kp LBKT,     LM1 LM2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(rbkt,  &kp RBKT,     RM1 RM2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(lpar,  &kp LPAR,     LB1 LB2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 ZMK_COMBO(rpar,  &kp RPAR,     RB1 RB2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Symbol Combos that are also used in Neovim logically placed */
-ZMK_COMBO(caret,  &kp CARET,  LM0 LM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST, LS(LA(LG(LCTRL))), KEYS_R)
-ZMK_COMBO(dollar, &kp DOLLAR, RM0 RM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST, LS(LA(LG(LCTRL))), KEYS_L)
+ZMK_COMBO(caret,  &kp CARET,  LM0 LM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(dollar, &kp DOLLAR, RM0 RM1, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Plus equals minus on inner column (index )logically laid out */
 ZMK_COMBO(plus,   &kp PLUS,  RT0 LT0, ALL, COMBO_TERM_FAST, COMBO_IDLE_FAST)
