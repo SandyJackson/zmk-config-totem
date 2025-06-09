@@ -4,7 +4,27 @@
   <img alt="TOTEM logo font" src="/docs/images/TOTEM_logo_bright.svg">
 </picture>
 
-# ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
+# Sandy's custom Totem Layout
+
+This is a custom layout for the totem split keyboard. Full readme from the creator below.
+
+The base of the layout is a QWERTY [Miryoku](https://github.com/manna-harbour/miryoku/) layout, but I diverged from their base implementation for better support of modifications.
+This layout makes liberal use of [Urob's](https://github.com/urob) excellent helpers and modules, with some ideas taken from his personal config.
+
+Ideas include:
+  - Timeless Homerow mods
+  - Multi-function shift key
+  - Combos for symbols
+
+This all builds fine via GitHub Actions.
+
+[!NOTE]
+I may implement the tri-state tab shifter in the future
+
+[!WARNING]
+I was unable to get Urob's hack for allowing the homerow combos to be tap only, this doesn't have much impact on daily use but would be wise to keep and eye on ZMK Issue [#544](https://github.com/zmkfirmware/zmk/issues/544)
+
+## ZMK CONFIG FOR THE TOTEM SPLIT KEYBOARD
 
 [Here](https://github.com/GEIGEIGEIST/totem) you can find the hardware files and build guide.\
 [Here](https://github.com/GEIGEIGEIST/qmk-config-totem) you can find the QMK config for the TOTEM.
