@@ -34,11 +34,12 @@
 
 /* Layer Definitions */
 #define BASE  0
-#define NAV   1
-#define MEDIA 2
-#define NUM   3
-#define SYM   4
-#define FUN   5
+#define ALT   1
+#define NAV   2
+#define MEDIA 3
+#define NUM   4
+#define SYM   5
+#define FUN   6
 
 /* define shortcodes for unused keys per layer */
 #define XXX &none
@@ -111,6 +112,22 @@ label= "BASE"                              ;
     &hml LSHFT A  &hml LALT S    &hml LCTRL D   &hml LGUI F    &hml LS(LC(LALT)) G  &hmr LS(LC(LALT)) H  &hmr LGUI J    &hmr LCTRL K   &hmr LALT L    &hmr LSHFT SQT
 //├──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
     &kp ESC       &kp Z          &kp X          &kp C          &kp V              &kp B          &kp N          &kp M          &kp COMMA      &kp DOT        &kp SLASH      &kp LS(LC(LA(TAB)))
+//                                ╭──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────╮
+                                  &lt MEDIA ESC  &lt NAV BSPC   MAGIC_SHIFT            &lt SYM RET    &lt NUM SPACE  &mt LS(LC(LALT)) TAB
+//                                ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
+  >;
+                };
+
+                alt_layer {
+label= "ALT"                              ;
+  bindings = <
+/* Gallium Colstag https://github.com/GalileoBlues/Gallium */
+//╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+    &kp B         &kp L          &kp D          &kp C          &kp V              &kp J          &kp Y          &kp O          &kp U          &kp COMMA
+//├──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+    &hml LSHFT N  &hml LALT R    &hml LCTRL T   &hml LGUI S    &hml LS(LC(LALT)) G  &hmr LS(LC(LALT)) P  &hmr LGUI H    &hmr LCTRL A   &hmr LALT E    &hmr LSHFT I
+//├──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+    &kp ESC       &kp X          &kp Q          &kp M          &kp W              &kp Z          &kp K          &kp F          &kp SQT      &kp SEMICOLON        &kp DOT      &kp LS(LC(LA(TAB)))
 //                                ╭──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────╮
                                   &lt MEDIA ESC  &lt NAV BSPC   MAGIC_SHIFT            &lt SYM RET    &lt NUM SPACE  &mt LS(LC(LALT)) TAB
 //                                ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
