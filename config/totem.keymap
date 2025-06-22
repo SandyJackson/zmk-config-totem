@@ -138,7 +138,7 @@ label= "MEDIA"                               ;
   bindings = <
     // ┌─────────────┬─────────────┬─────────────┬─────────────┬─────────────┐   ┌─────────────┬─────────────┬─────────────┬─────────────┬─────────────┐
     // │             │             │             │             │             │   │             │             │             │             │             │
-       XXX            XXX          XXX           XXX           XXX              XXX           XXX           XXX           XXX           XXX
+       XXX            XXX          XXX           XXX           XXX              XXX    &kp C_BRIGHTNESS_DEC  &kp C_BRIGHTNESS_INC    XXX           XXX
     // ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤   ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤
     // │  GUI        │  ALT        │  CTRL       │  SHIFT      │             │   │  PREV       │  VOL DOWN   │  VOL UP     │  NEXT       │             │
        &kp LGUI      &kp LALT      &kp LCTRL     &kp LSHFT     XXX              &kp C_PREV    &kp C_VOL_DN  &kp C_VOL_UP  &kp C_NEXT    XXX
