@@ -39,11 +39,12 @@
 #define BASE  0
 #define ALT   1
 #define ALT2  2
-#define NAV   3
-#define MEDIA 4
-#define NUM   5
-#define SYM   6
-#define FUN   7
+#define ALT3  3
+#define NAV   4
+#define MEDIA 5
+#define NUM   6
+#define SYM   7
+#define FUN   8
 
 /* define shortcodes for unused keys per layer */
 #define XXX &none
@@ -150,6 +151,25 @@ bindings = <
 &kp Z       &kp G          &kp X          &kp J          &kp K              &kp MINUS          &kp SLASH          &kp R          &kp M      &kp F        &kp P      &kp Q
 //                                ╭──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────╮
                   &lt MEDIA ESC  &lt NAV BSPC   MAGIC_SHIFT            &lt SYM RET    &lt NUM SPACE  &mt LS(LC(LALT)) TAB
+//                                ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
+>;
+};
+alt3_layer {
+label= "ALT3"                              ;
+bindings = <
+/* Enthium https://github.com/sunaku/enthium */
+/*   q y u o / x l d w z */
+/* b c i e a , k h t n s v */
+/*   ' - = . ; j m g p f */
+/*             r */
+//╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+&kp Q         &kp Y          &kp U          &kp O          &kp SLASH              &kp X     &kp L          &kp D          &kp W          &kp Z
+//├──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+&hml LSHFT C  &hml LALT I    &hml LCTRL E   &hml LGUI A    &hml LS(LC(LALT)) COMMA  &hmr LS(LC(LALT)) K  &hmr LGUI H    &hmr LCTRL T   &hmr LALT N    &hmr LSHFT S
+//├──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+&kp B       &kp SQT          &kp MINUS          &kp EQUAL          &kp DOT              &kp SEMICOLON          &kp J          &kp M          &kp G      &kp P        &kp F      &kp V
+//                                ╭──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────╮
+                  &lt MEDIA ESC  &lt NAV BSPC   MAGIC_SHIFT            &lt SYM RET    &lt NUM SPACE  &mt LS(LC(LALT)) R
 //                                ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
 >;
 };
