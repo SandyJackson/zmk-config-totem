@@ -15,7 +15,8 @@
 #define COMBO_IDLE_SLOW 50
 
 /* Combo to switch to alternate layout */
-ZMK_COMBO(altlayer,  &tog ALT,     LT4 RT4, BASE ALT , COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(altlayer,  &tog ALT,     LT4 RT4, BASE ALT ALT2 , COMBO_TERM_FAST, COMBO_IDLE_FAST)
+ZMK_COMBO(alt2layer, &tog ALT2,    LB5 RB5, BASE ALT ALT2, COMBO_TERM_FAST, COMBO_IDLE_FAST)
 
 /* Combos for brackets etc. symmetrically across */
 ZMK_COMBO(lbrc,  &kp LBRC,     LT1 LT2, ALL , COMBO_TERM_FAST, COMBO_IDLE_FAST)

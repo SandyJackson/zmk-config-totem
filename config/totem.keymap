@@ -21,8 +21,11 @@
 #include "zmk-helpers/key-labels/totem.h"
 
 // Customise build and behaviour timings
+// HOLDING_TIME
 #define HRM_TAPPING_TERM      400
+// REPEAT DECAY
 #define HRM_QUICK_TAP         175
+// STREAK DECAY
 #define HRM_PRIOR_IDLE        150
 #define LT_QUICK_TAP          175
 #define SS_QUICK_TAP          175
@@ -35,11 +38,12 @@
 /* Layer Definitions */
 #define BASE  0
 #define ALT   1
-#define NAV   2
-#define MEDIA 3
-#define NUM   4
-#define SYM   5
-#define FUN   6
+#define ALT2  2
+#define NAV   3
+#define MEDIA 4
+#define NUM   5
+#define SYM   6
+#define FUN   7
 
 /* define shortcodes for unused keys per layer */
 #define XXX &none
@@ -134,6 +138,21 @@ label= "ALT"                              ;
   >;
                 };
 
+                alt2_layer {
+label= "ALT2"                              ;
+bindings = <
+/* Engrammer https://github.com/sunaku/engrammer */
+//╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+&kp B         &kp Y          &kp O          &kp U          &kp SQT              &kp SEMICOLON     &kp L          &kp D          &kp W          &kp V
+//├──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+&hml LSHFT C  &hml LALT I    &hml LCTRL E   &hml LGUI A    &hml LS(LC(LALT)) COMMA  &hmr LS(LC(LALT)) DOT  &hmr LGUI H    &hmr LCTRL T   &hmr LALT S    &hmr LSHFT N
+//├──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────┬──────────────┬──────────────╮
+&kp Z       &kp G          &kp X          &kp J          &kp K              &kp MINUS          &kp SLASH          &kp R          &kp M      &kp F        &kp P      &kp Q
+//                                ╭──────────────┬──────────────┬──────────────╮   ╭──────────────┬──────────────┬──────────────╮
+                  &lt MEDIA ESC  &lt NAV BSPC   MAGIC_SHIFT            &lt SYM RET    &lt NUM SPACE  &mt LS(LC(LALT)) TAB
+//                                ╰──────────────┴──────────────┴──────────────╯   ╰──────────────┴──────────────┴──────────────╯
+>;
+};
                 nav_layer {
 // ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓
 label= "NAV"                              ;
